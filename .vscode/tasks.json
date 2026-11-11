@@ -1,0 +1,30 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "API: Typecheck",
+      "type": "npm",
+      "script": "typecheck",
+      "path": "apps/api",
+      "group": "build",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Web: Typecheck",
+      "type": "npm",
+      "script": "typecheck",
+      "path": "apps/web",
+      "group": "build",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Project: Typecheck",
+      "type": "shell",
+      "command": "npm run typecheck",
+      "group": "build",
+      "problemMatcher": "$tsc"
+    }
+  ]
+}
+    
